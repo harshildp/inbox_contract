@@ -1,14 +1,14 @@
 const assert = require('assert');
 const ganache = require('ganache-cli');
+const provider = ganache.provider(); // local network provider with fake accounts to use
 const Web3 = require('web3');
-const provider = ganache.provider();
 const web3 = new Web3(provider);
 const { interface, bytecode } = require('../compile');
 
 let accounts;
 let inbox
 
-beforeEach(async () => {
+beforeEach(async () => { // we want to redeploy a fresh contract for every test
     // Get accounts
     accounts = await web3.eth.getAccounts();
     
