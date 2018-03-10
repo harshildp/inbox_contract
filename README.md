@@ -15,4 +15,4 @@ Basic smart contract tested on a local network and deployed to the Rinkeby test 
 * Rinkeby Ethereum test network
 
 ## Acknowledgements
-Steven Grider who teaches 'Ethereum and Solidity: The Complete Developer's Guide' at Udemy.
+Stephen Grider who teaches 'Ethereum and Solidity: The Complete Developer's Guide' at Udemy.
